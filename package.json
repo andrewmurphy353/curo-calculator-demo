@@ -1,0 +1,20 @@
+{
+  "name": "@curo/calculator-demo",
+  "description": "Demo showcasing various Curo financial calculator features",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Andrew Murphy",
+    "email": "andrew.murphy@confido.ie",
+    "url": "https://github.com/andrewmurphy353"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewmurphy353/curo-calculator-demo/issues"
+  },
+  "homepage": "https://github.com/andrewmurphy353/curo-calculator-demo#readme",
+  "dependencies": {
+    "@curo/calculator": "^1.0.3"
+  },
+  "devDependencies": {}
+}
