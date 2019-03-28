@@ -1,4 +1,4 @@
-import { CashFlowPayment, Convention, MathUtils, Profile } from "@curo/calculator";
+import { CashFlowCharge, CashFlowPayment, Convention, MathUtils, Profile } from "@curo/calculator";
 
 import './assets/styles/demo.css';
 
@@ -127,7 +127,14 @@ export default class ScheduleBuilder {
 
     const p2 = document.createElement("p");
     p2.appendChild(document.createTextNode(
-      "Take note that the production of a proof schedule only makes sense in the context of APR and XIRR interest rate calculations. For calculations based on compound interest use an amortisation schedule."));
+      `This schedule demonstrates that the derived XIRR/APR result is mathematically correct; 
+      you can cross-check the result by substituting the inputs from each line into the formula
+      at the bottom of the table and then sum the results (use the unrounded XIRR/APR result 
+      when you do this).
+      Take note that the production of a proof schedule only makes sense in the context of APR
+      and XIRR interest rate calculations where time periods are measured with reference to the
+      initial drawdown date. For calculations based on compound interest use an amortisation
+      schedule.`));
     containerDiv.appendChild(p2);
 
     return containerDiv;
@@ -158,6 +165,11 @@ export default class ScheduleBuilder {
     let balanceCFwd = 0;
 
     for (const cashFlow of this._profile.cashFlows) {
+      if (cashFlow instanceof CashFlowCharge) {
+        // Do not include charges
+        continue;
+      }
+
       balanceCFwd = MathUtils.gaussRound(balanceCFwd + cashFlow.value, this._profile.precision);
 
       const tr = tbody.insertRow();
