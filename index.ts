@@ -8,7 +8,9 @@ import runDemo07 from "./src/demo07";
 import runDemo08 from "./src/demo08";
 
 /*
- * Each function below calculates the respective demo results which are displayed in the index.html page located in the project root folder. Unfortunately this single page must be shared by all the demos which means only one function should be active at any time, so comment out all functions except the one being evaluated.
+ Each function below calculates the respective demo results which are displayed in the index.html page located in the project root folder. This single page is shared by all the demos which means only one function should be active at any time, so comment out all functions except the one being evaluated.
+ 
+ The source code for each demo is located in the src folder on the left. Feel free to change the calculation variables in the demo to see the changes reflected live in the page in the right window.
  */
 
 runDemo01();
