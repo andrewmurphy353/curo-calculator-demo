@@ -6,7 +6,7 @@ export default function runDemo06() {
   // Problem definition
   document.getElementById("demoTitle").innerText = "DEMO 6: Compute Supplier Contribution, 0% Interest Finance Promotion, 30 Day Deferred Settlement";
   document.getElementById("demoDef1").innerText = "A car dealership offers an individual 0% finance on a car costing 20,400.00. An upfront deposit of 6000.00 is payable, followed by 36 monthly instalments of 400.00 in arrears. Finance is provided by a third party lender at an effective annual interest rate of 5.0%. The supplier agrees with the lender to make an *undisclosed* contribution to cover the cost of finance, and furthermore offers the lender 30 day settlement terms. This scenario is illustrated below.";
-  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./assets/images/demo06.png";
+  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./images/demo06.png";
   document.getElementById("demoDef2").innerText = "Using the US 30/360 day count convention, compute the value of the contribution and lender's IRR."
 
 

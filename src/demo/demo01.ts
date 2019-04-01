@@ -6,7 +6,7 @@ export default function runDemo01() {
   // Problem definition
   document.getElementById("demoTitle").innerText = "DEMO 1: Solve Unknown Payment, Compute Borrower's APR (Annual Percentage Rate)";
   document.getElementById("demoDef1").innerText = "An individual has applied for a loan of 10,000.00, repayable by 6 monthly instalments in arrears. A fee of 50.0 is payable with the first instalment. The lender's effective annual interest rate is 8.25%. This scenario is illustrated below.";
-  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./assets/images/demo01.png";
+  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./images/demo01.png";
   document.getElementById("demoDef2").innerText = "Using the US 30/360 day count convention, compute the value of the unknown instalments/payments and the borrower's APR."
 
 

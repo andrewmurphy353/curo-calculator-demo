@@ -6,7 +6,7 @@ export default function runDemo03() {
   // Problem definition
   document.getElementById("demoTitle").innerText = "DEMO 3: Solve Unknown Rental, Compute Lessor's XIRR (eXtended Internal Rate of Return)";
   document.getElementById("demoDef1").innerText = "A business enters into a 2-year operating lease for equipment costing 25,000.00. Rentals are due monthly in advance followed by a 15,000.00 purchase option (future value). The lessor's effective annual interest rate is 5.0%. This scenario is illustrated below.";
-  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./assets/images/demo03.png";
+  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./images/demo03.png";
   document.getElementById("demoDef2").innerText = "Using the US 30/360 day count convention, compute the value of the unknown rentals and the lessor's XIRR."
 
 

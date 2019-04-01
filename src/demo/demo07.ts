@@ -6,7 +6,7 @@ export default function runDemo07() {
   // Problem definition
   document.getElementById("demoTitle").innerText = "DEMO 7: Solve Unknown Payment, Stepped Repayment Profile";
   document.getElementById("demoDef1").innerText = "An individual secures a loan of 10,000.00 repayable by 36 monthly instalments in arrears on a stepped profile. The instalments payable in each successive year are to be stepped at the ratio 1.0 : 0.6 : 0.4 to accelerate capital recovery in earlier years. The lender's effective annual interest rate is 7.0%. This scenario is illustrated below.";
-  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./assets/images/demo07.png";
+  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./images/demo07.png";
   document.getElementById("demoDef2").innerText = "Using the US 30/360 day count convention, compute the value of the unknown (fully weighted) instalment and the borrower's APR."
 
 

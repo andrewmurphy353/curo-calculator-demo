@@ -1,8 +1,17 @@
 {
   "name": "@curo/calculator-demo",
-  "description": "Demo showcasing various Curo financial calculator features",
   "version": "0.0.1",
+  "description": "Demo showcasing various Curo financial calculator features",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmurphy353/curo-calculator-demo.git"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "tslint -p tsconfig.json",
+    "build": "webpack --config webpack.config.js"
+  },
   "author": {
     "name": "Andrew Murphy",
     "email": "andrew.murphy@confido.ie",
@@ -14,7 +23,15 @@
   },
   "homepage": "https://github.com/andrewmurphy353/curo-calculator-demo#readme",
   "dependencies": {
-    "@curo/calculator": "^1.0.3"
+    "@curo/calculator": "^1.1.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
 }

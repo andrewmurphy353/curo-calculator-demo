@@ -1,7 +1,5 @@
 import { CashFlowCharge, CashFlowPayment, Convention, MathUtils, Profile } from "@curo/calculator";
 
-import './assets/styles/demo.css';
-
 /**
  * A utility class for building the demo amortisation and APR/XIRR proof schedules.
  * 
