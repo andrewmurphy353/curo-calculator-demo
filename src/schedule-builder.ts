@@ -64,7 +64,8 @@ export default class ScheduleBuilder {
     const thead = document.createElement("thead");
     const thr = thead.insertRow(0);
     thr.insertCell(0).outerHTML = "<th>Label</th>";
-    thr.insertCell(1).outerHTML = "<th>Date</th>";
+    thr.insertCell(1).outerHTML =
+      (this._profile.dayCount.usePostingDates()) ? "<th>Posting Date</th>" : "<th>Value Date</th>";
     thr.insertCell(2).outerHTML = "<th>Amount</th>";
     thr.insertCell(3).outerHTML = "<th>Day Count Factor</th>";
     thr.insertCell(4).outerHTML = "<th>Amount Discounted [1]</th>";
@@ -81,7 +82,10 @@ export default class ScheduleBuilder {
       const tr = tbody.insertRow();
       tr.insertCell().appendChild(document.createTextNode(cashFlow.label));
       tr.insertCell().appendChild(
-        document.createTextNode(cashFlow.postingDate.toLocaleDateString(this._locale))
+        document.createTextNode(
+          (this._profile.dayCount.usePostingDates()) ?
+            cashFlow.postingDate.toLocaleDateString(this._locale) :
+            cashFlow.valueDate.toLocaleDateString(this._locale))
       );
       tr.insertCell().appendChild(document.createTextNode(
         cashFlow.value.toLocaleString(this._locale,
