@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/andrewmurphy353/curo-calculator-demo#readme",
   "dependencies": {
-    "@curo/calculator": "^1.1.1"
+    "@curo/calculator": "^1.1.2"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^1.0.1",
