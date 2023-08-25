@@ -6,7 +6,7 @@ export default function runDemo04() {
   // Problem definition
   document.getElementById("demoTitle").innerText = "DEMO 4: Solve Unknown Payment with Irregular Interest Compounding";
   document.getElementById("demoDef1").innerText = "An individual secures a loan of 10,000.00 repayable by 36 monthly instalments in arrears. The lender's effective annual interest rate is 8.25% and interest is compounded quarterly (not monthly). This scenario is illustrated below.";
-  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./images/demo04.png";
+  (document.getElementById("demoCfd") as HTMLImageElement).src = "./images/demo04.png";
   document.getElementById("demoDef2").innerText = "Using the US 30/360 day count convention, compute the value of the unknown payments and the lender's IRR."
 
   
