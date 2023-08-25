@@ -6,7 +6,7 @@ export default function runDemo08() {
   // Problem definition
   document.getElementById("demoTitle").innerText = "DEMO 8:** Solve Unknown Rental, Loaded First Rental";
   document.getElementById("demoDef1").innerText = "A business enters into a 3-year finance lease for equipment costing 10,000.00. Rentals are due monthly with the first 3 rentals due upfront, followed by the remaining 33 monthly rentals due in arrears. The lessor's effective annual interest rate is 7.0%. This scenario is illustrated below.";
-  (<HTMLImageElement>document.getElementById("demoCfd")).src = "./images/demo08.png";
+  (document.getElementById("demoCfd") as HTMLImageElement).src = "./images/demo08.png";
   document.getElementById("demoDef2").innerText = "Using the US 30/360 day count convention, compute the value of the unknown rental and the lessor's IRR."
 
 
