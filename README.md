@@ -1,6 +1,12 @@
 # Curo Calculator Demo
 ![GitHub](https://img.shields.io/github/license/andrewmurphy353/curo-calculator-demo.svg)
 
+## Update
+
+**Important Notice:** This repository and its codebase are no longer actively maintained. As a result, any updates made to [curo](https://github.com/andrewmurphy353/curo), which is a Dart version of this library, will not be reflected in these examples.
+
+---
+
 This application showcases certain features of the [Curo Calculator](https://www.npmjs.com/package/@curo/calculator) available for download from NPM.
 
 If you are reading this document in GitHub and want to quickly evaluate the calculator then visit [Stackblitz](https://stackblitz.com/@andrewmurphy353) where you are able to interact with the various demos presented below.
